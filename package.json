@@ -1,0 +1,75 @@
+{
+  "name": "govtrades",
+  "version": "1.0.0",
+  "description": "Government Financial Transparency Platform",
+  "private": true,
+  "homepage": "https://govtrades.com",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write src/**/*.{js,jsx,css,md}"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.5.6",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.4.17"
+  },
+  "keywords": [
+    "government",
+    "transparency",
+    "financial-disclosure",
+    "stock-trading",
+    "politics",
+    "react",
+    "tailwindcss"
+  ],
+  "author": {
+    "name": "GovTrades Team",
+    "email": "contact@govtrades.com",
+    "url": "https://govtrades.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/govtrades/govtrades.git"
+  },
+  "bugs": {
+    "url": "https://github.com/govtrades/govtrades/issues"
+  }
+}
