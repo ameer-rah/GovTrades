@@ -1,16 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import SearchSection from './components/SearchSection';
 import ProfilePage from './components/ProfilePage';
 import TrendingPage from './components/TrendingPage';
 import WatchlistPage from './components/WatchlistPage';
 import Footer from './components/Footer';
-import { officials } from './data/mockData';
+import CongressTrades from './components/CongressTrades';
 
 function App() {
   const [activeTab, setActiveTab] = useState('search');
   const [selectedOfficial, setSelectedOfficial] = useState(null);
   const [watchlist, setWatchlist] = useState([]);
+  const [officials, setOfficials] = useState([]);
+
+  useEffect(() => {
+    // Fetch real data from backend
+    fetch('/api/congress-trades')
+      .then(res => res.json())
+      .then(data => setOfficials(data));
+  }, []);
 
   const handleSelectOfficial = (official) => {
     setSelectedOfficial(official);
@@ -62,6 +70,8 @@ function App() {
           />
         )}
       </div>
+
+      <CongressTrades />
 
       <Footer />
     </div>
